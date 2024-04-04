@@ -21,6 +21,8 @@ print("12. Ordenar Vetor em ordem crescente.")
 print("13. Ordenar Vetor em ordem decrescente.")
 print("14. Ordenar Vetor em ordem crescente ou decrescente.")
 print("15. Separar Pares e Impares no vetor")
+print("16. Conta número acima da média no Vetor.")
+print("17. Exibe o maior número no vetor.")
 print("0. SAIR")
 
 op = ''
@@ -72,6 +74,11 @@ while op != 0:
         case 15:
             subalgoritmosVetor.separaParesImpares(v1)
             continue
+        case 16:
+            print(f"Existem {subalgoritmosVetor.contaAcimaMedia(v1)} números acima da média no vetor")
+            continue
+        case 17:
+            print(f"O maior numero no vetor é: {subalgoritmosVetor.maiorNum(v1)}.")
         case 0:
             break   
         case _:

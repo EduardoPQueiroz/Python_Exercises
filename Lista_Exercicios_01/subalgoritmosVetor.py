@@ -114,3 +114,22 @@ def separaParesImpares(v1: list):
                 v1[i] = v1[j]
                 v1[j] = mente
     print(f"O vetor ordenado com os pares a esquerda: {v1}")
+
+def contaAcimaMedia(v1: list):
+    soma = 0
+    counter = 0
+    for i in range(0, 5, 1):
+        soma = soma + v1[i]
+    media = soma / 5
+    for i in range(0, 5, 1):
+        if v1[i] > media:
+            counter = counter + 1
+    return counter
+
+def maiorNum(v1: list):
+    maior = 0
+    for i in range(0, 5, 1):
+        if v1[i] > maior:
+            maior = v1[i]
+    return maior
+        
