@@ -16,7 +16,25 @@ def conta_elementos(l):
     return qtd_elementos
 
 def retorna_indice(l, elemento):
-    for i in range(0, len(l), 1):
+    distancia_lista = len(l)
+    valor = -1
+    for i in range(0, distancia_lista, 1):
         if elemento == l[i]:
             valor = i
-    return 
+    return valor
+
+def busca(l, elemento):
+    distancia_lista = len(l)
+    qtd_elemento = 0
+    for i in range(0, distancia_lista, 1):
+        if l[i] == elemento:
+            qtd_elemento = qtd_elemento + 1
+    return qtd_elemento
+
+def conta_inteiro(l):
+    dist_lista = len(l)
+    qtd_inteiros = 0
+    for i in range(0, dist_lista, 1):
+        if l[i] == int:
+            qtd_inteiros += 1
+    return qtd_inteiros
