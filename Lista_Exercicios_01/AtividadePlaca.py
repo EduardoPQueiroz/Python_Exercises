@@ -8,7 +8,7 @@ def verifica_placa(placa: str) -> bool:
     valido = True
     if len(placa) == 7:
         for char in placa:
-            if placa[0] in alfabeto and placa[1] in alfabeto and placa[2] in alfabeto and placa[4] in alfabeto and placa[3] in numeros and placa[5] in numeros and placa[6] in numeros:
+            if placa[0] in alfabeto and placa[1] in alfabeto and placa[2] in alfabeto and placa[4] in alfabeto or placa[4] in numeros and placa[3] in numeros and placa[5] in numeros and placa[6] in numeros:
                 continue
             else:
                 valido = False
