@@ -37,7 +37,9 @@ def separa_listas(lista: list) -> None:
     print(listaBoliviano)
 
 def limite_dez() -> list:
-    lista = []
+    lista = [
+        
+    ]
     for i in range(10):
         elemento = input("insira o que quiser:")
         lista.append(elemento)
@@ -61,6 +63,12 @@ def limite_dez() -> list:
 
 
 verifica = ''
+print("1 - Substituir Caracteres.")
+print("2 - Separa Listas.")
+print("3 - Faça uma lista com 10 itens.")
+print("0 - Sair")
+
+
 
 while verifica != 0:
     opcao = int(input("insira o numero do exercicio desejado(1-3): "))
@@ -74,6 +82,7 @@ while verifica != 0:
         case 3:
             limite_dez()
             continue
-
+        case 0:
+            break    
     print("deseja contiuar?")
     verifica = int(input("1-sim \n0-não\n"))
