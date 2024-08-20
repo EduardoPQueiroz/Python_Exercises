@@ -26,7 +26,8 @@ contato = {
 }
 
 print(contato)
-
+for i in contato.values():
+    print(i)
 print(contato.keys())
-
+print(contato.items())
 #os.system("cls")
