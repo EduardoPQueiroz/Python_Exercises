@@ -1,6 +1,7 @@
 import os
 os.system("cls")
 
+numeros = "1234567890"
 # Definição da estrutura do dicionário:
 notas = {
     'João' : 9.5,
@@ -10,11 +11,21 @@ notas = {
 # Subalgoritmos
 
 def valida_nota(nota: float) -> bool:
-    if nota < 0 or nota > 10:
-        validez = False
-    else:
-        validez = True
-    return validez
+    try:
+        if nota < 0 or nota > 10:
+            validez = False
+        else:
+            validez = True
+        return validez
+    except:
+        print("\n***************************\nDados inválidos.\n***************************")
+
+
+def valida_nome(nome: str) -> bool:
+    for char in nome:
+        if char in numeros:
+            return False
+    return True
 
 def menu() -> None: 
         os.system("cls")
@@ -35,17 +46,20 @@ def listar_alunos(d : dict) -> None:
 # 1. ADICIONAR ALUNOS A LISTA
 def cadastar_aluno(d : dict) -> None:
     print("Cadastro de Alunos\n==================\n")
-    nome = str(input("Insira o nome de um aluno: "))
-    nota = float(input("Insira a nota do Aluno: "))
-    if nome in d:
-        print("O nome inserido já existe na lista de alunos.")
-    else:
-        valida_nota(nota)
-        if nota == False:
-            print("\n***************************\nNota inválida inserida.\n***************************")
+    try:
+        nome = str(input("Insira o nome de um aluno: "))
+        nota = float(input("Insira a nota do Aluno: "))
+        if nome in d:
+            print("O nome inserido já existe na lista de alunos.")
         else:
-            d[nome] = nota
-            print("\n===========================\nNota inserida com sucesso!\n===========================")
+            if valida_nota(nota) == False or valida_nome(nome) == False:
+                print("\n***************************\nDados inválidos inseridos.\n***************************")
+            else:
+                d[nome] = nota
+                print("\n===========================\nNota inserida com sucesso!\n===========================")
+    except:
+        print("\n***************************\nDados inválidos inseridos.\n***************************")
+    
 
 # 2. EDITAR ALUNOS
 def editar_aluno(d: dict) ->  None:
@@ -163,6 +177,3 @@ while opcao != 0:
         case _:
             print("opção inválida")
             input("Pressione Enter para continuar.")
-
-
-
