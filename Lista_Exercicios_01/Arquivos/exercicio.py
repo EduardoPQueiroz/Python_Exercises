@@ -3,76 +3,110 @@ os.system("cls")
 
 # Lista de comentários sobre um smartphone
 comentarios = [
-    "Ótimo smartphone, recomendo!\n",
-    "A câmera é incrível, tira fotos nítidas.\n",
-    "Bateria dura o dia todo, muito satisfeita.\n",
-    "O desempenho é rápido, sem travamentos.\n",
-    "Design elegante e moderno, amei!\n",
-    "A tela é muito boa, ótima para assistir vídeos.\n",
-    "Chegou rápido, muito feliz com a entrega.\n",
-    "A qualidade do som é excelente.\n",
-    "A interface é intuitiva e fácil de usar.\n",
-    "O preço vale a pena pela qualidade.\n",
-    "Fiquei impressionado com a durabilidade da bateria.\n",
-    "Não gosto do tamanho, é um pouco grande para mim.\n",
-    "O suporte ao cliente foi ótimo, ajudaram rapidamente.\n",
-    "Apenas o carregador poderia ser mais rápido.\n",
-    "As atualizações são frequentes e melhoram o desempenho.\n",
-    "Os aplicativos rodam muito bem, sem lags.\n",
-    "A cor do aparelho é linda, exatamente como na foto.\n",
-    "A segurança biométrica é rápida e precisa.\n",
-    "A memória interna é suficiente para meus aplicativos.\n",
-    "O smartphone esquentou um pouco durante jogos intensos.\n",
-    "A qualidade de construção é robusta, parece durável.\n",
-    "O reconhecimento facial é prático e funciona bem.\n",
-    "As configurações são fáceis de ajustar.\n",
-    "Faltam alguns recursos que eu gostaria de ter.\n",
-    "A experiência geral é muito positiva.\n",
-    "O modo noturno da câmera é ótimo para fotos em baixa luz.\n",
-    "A conectividade 5G é rápida e estável.\n",
-    "Não consegui encontrar uma capinha que sirva.\n",
-    "O sistema operacional é leve e eficiente.\n",
-    "A função de carregamento sem fio é super prática.\n",
-    "As cores da tela são vibrantes e vívidas.\n",
-    "O peso é ideal, não é muito pesado.\n",
-    "Estou adorando as funcionalidades de câmera.\n",
-    "A proteção de tela é resistente, não arranha facilmente.\n",
-    "O smartphone se destaca em comparação com outros.\n",
-    "Fiquei decepcionado com a qualidade do suporte técnico.\n",
-    "O armazenamento é expansível, ótima opção.\n",
-    "A personalização de temas é muito legal.\n",
-    "Os jogos rodam perfeitamente, sem queda de frames.\n",
-    "O GPS é preciso e rápido na localização.\n",
-    "Os anúncios de software são um pouco invasivos.\n",
-    "O design é um pouco escorregadio, preciso de capinha.\n",
-    "O modo retrato da câmera é um destaque.\n",
-    "A experiência de uso é fluida e sem interrupções.\n",
-    "As funcionalidades de privacidade são excelentes.\n",
-    "O Bluetooth conecta rápido a outros dispositivos.\n",
-    "A qualidade das chamadas é cristalina.\n",
-    "O smartphone não é resistente à água, isso é um ponto negativo.\n",
-    "A tela é sensível ao toque e responde rapidamente.\n",
-    "Os recursos de acessibilidade são muito bons.\n",
-    "As cores disponíveis são bem variadas.\n",
-    "O smartphone se integra bem com outros dispositivos.\n",
-    "O carregamento rápido faz toda a diferença.\n",
-    "Não tem a opção de rádio FM, o que eu gostaria.\n",
-    "Os atalhos são muito úteis e práticos.\n",
-    "O modo de economia de bateria é eficaz.\n",
-    "Estou bastante satisfeito com a compra.\n"
+    "Ótimo smartphone, recomendo!",
+    "A câmera é incrível, tira fotos nítidas.",
+    "Bateria dura o dia todo, muito satisfeita.",
+    "O desempenho é rápido, sem travamentos.",
+    "Design elegante e moderno, amei!",
+    "A tela é muito boa, ótima para assistir vídeos.",
+    "Chegou rápido, muito feliz com a entrega.",
+    "A qualidade do som é excelente.",
+    "A interface é intuitiva e fácil de usar.",
+    "O preço vale a pena pela qualidade.",
+    "Fiquei impressionado com a durabilidade da bateria.",
+    "Não gosto do tamanho, é um pouco grande para mim.",
+    "O suporte ao cliente foi ótimo, ajudaram rapidamente.",
+    "Apenas o carregador poderia ser mais rápido.",
+    "As atualizações são frequentes e melhoram o desempenho.",
+    "Os aplicativos rodam muito bem, sem lags.",
+    "A cor do aparelho é linda, exatamente como na foto.",
+    "A segurança biométrica é rápida e precisa.",
+    "A memória interna é suficiente para meus aplicativos.",
+    "O smartphone esquentou um pouco durante jogos intensos.",
+    "A qualidade de construção é robusta, parece durável.",
+    "O reconhecimento facial é prático e funciona bem.",
+    "As configurações são fáceis de ajustar.",
+    "Faltam alguns recursos que eu gostaria de ter.",
+    "A experiência geral é muito positiva.",
+    "O modo noturno da câmera é ótimo para fotos em baixa luz.",
+    "A conectividade 5G é rápida e estável.",
+    "Não consegui encontrar uma capinha que sirva.",
+    "O sistema operacional é leve e eficiente.",
+    "A função de carregamento sem fio é super prática.",
+    "As cores da tela são vibrantes e vívidas.",
+    "O peso é ideal, não é muito pesado.",
+    "Estou adorando as funcionalidades de câmera.",
+    "A proteção de tela é resistente, não arranha facilmente.",
+    "O smartphone se destaca em comparação com outros.",
+    "Fiquei decepcionado com a qualidade do suporte técnico.",
+    "O armazenamento é expansível, ótima opção.",
+    "A personalização de temas é muito legal.",
+    "Os jogos rodam perfeitamente, sem queda de frames.",
+    "O GPS é preciso e rápido na localização.",
+    "Os anúncios de software são um pouco invasivos.",
+    "O design é um pouco escorregadio, preciso de capinha.",
+    "O modo retrato da câmera é um destaque.",
+    "A experiência de uso é fluida e sem interrupções.",
+    "As funcionalidades de privacidade são excelentes.",
+    "O Bluetooth conecta rápido a outros dispositivos.",
+    "A qualidade das chamadas é cristalina.",
+    "O smartphone não é resistente à água, isso é um ponto negativo.",
+    "A tela é sensível ao toque e responde rapidamente.",
+    "Os recursos de acessibilidade são muito bons.",
+    "As cores disponíveis são bem variadas.",
+    "O smartphone se integra bem com outros dispositivos.",
+    "O carregamento rápido faz toda a diferença.",
+    "Não tem a opção de rádio FM, o que eu gostaria.",
+    "Os atalhos são muito úteis e práticos.",
+    "O modo de economia de bateria é eficaz.",
+    "Estou bastante satisfeito com a compra."
 ]
 
 # Lista de palavras descartáveis
 palavras_descartaveis = [
-    "a\n", "o\n", "as\n", "os\n", "um\n", "uma\n", "para\n", "de\n", "do\n", "da\n", 
-    "em\n", "no\n", "na\n", "com\n", "que\n", "por\n", "e\n", "ou\n", "mas\n", 
-    "se\n", "não\n", "é\n", "um\n", "na\n", "ao\n", "aos\n", "das\n", "dos\n", 
-    "como\n", "mais\n", "menos\n", "sobre\n", "até\n", "entre\n", "dentro\n", 
-    "fora\n", "sempre\n", "também\n", "muito\n", "pouco\n", "cada\n", 
-    "todos\n", "alguns\n", "quem\n", "cujo\n", "este\n", "essa\n", "isto\n", 
-    "aquilo\n", "meu\n", "tua\n", "seu\n", "sua\n", "minha\n", "nos\n", 
-    "nós\n", "eles\n", "elas\n", "você\n", "vocês\n"
+    "a", "o", "as", "os", "um", "uma", "para", "de", "do", "da", 
+    "em", "no", "na", "com", "que", "por", "e", "ou", "mas", 
+    "se", "não", "é", "um", "na", "ao", "aos", "das", "dos", 
+    "como", "mais", "menos", "sobre", "até", "entre", "dentro", 
+    "fora", "sempre", "também", "muito", "pouco", "cada", 
+    "todos", "alguns", "quem", "cujo", "este", "essa", "isto", 
+    "aquilo", "meu", "tua", "seu", "sua", "minha", "nos", 
+    "nós", "eles", "elas", "você", "vocês"
 ]
 
+# CRIAÇÃO DO ARQUIVO SUJO.TXT
 with open("sujo.txt", "w+", encoding = "utf-8") as arq:
     arq.writelines(comentarios)
+
+
+# Colocando o conteudo do arquivo sujo em uma variável
+conteudo = ""
+if os.path.exists("sujo.txt"):
+    with open("sujo.txt", "r+", encoding= "utf-8") as arq:
+        conteudo = arq.read()
+    arq.close()
+
+# Removendo as palavras descartáveis
+for word in palavras_descartaveis:
+    conteudo = conteudo.replace(word, "")
+
+# Copiando as informações no arquivo limpo.
+with open("limpo.txt", "w+", encoding= "utf-8") as arq:
+    arq.writelines(conteudo)
+
+#CONTANDO A PALAVRA COM MAIS OCORRÊNCIAS
+# Separar em as palavras em uma lista de palavras
+palavras_limpo = conteudo.split()
+# Criar um dicionário para armazenar a contagem das palavras
+contagem_palavras = {}
+# Contar as palavras usando um for
+for word in palavras_limpo:
+    if word in contagem_palavras:
+        contagem_palavras[word] =+ 1
+    else:
+        contagem_palavras[word] = 1
+# Identificar a palavra que mais aparece e quantas vezes aparece
+palavraFreq = max(contagem_palavras, key=contagem_palavras.get)
+Freq = contagem_palavras[palavraFreq]
+# Exibir a palavra que mais aparece
+print(f"A Palavra que mais aparece no arquivo é a palavra: '{palavraFreq}', ela aparece '{Freq}' vezes.")
