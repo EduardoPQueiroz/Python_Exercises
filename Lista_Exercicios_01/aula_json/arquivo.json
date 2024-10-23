@@ -1,0 +1,12 @@
+{
+    "pessoa1": {
+        "nome": "Luca",
+        "idade": 16,
+        "email": "luca@etec.com.br"
+    },
+    "pessoa2": {
+        "nome": "Jamal",
+        "idade": 17,
+        "email": "jamal@etec.com.br"
+    }
+}
